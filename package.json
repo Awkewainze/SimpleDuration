@@ -1,11 +1,11 @@
 {
   "name": "@awkewainze/simpleduration",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple duration library, do not use for actual date time logic!",
   "main": "dist/duration.js",
   "types": "dist/duration.d.ts",
   "scripts": {
-    "prepublish": "tsc",
+    "prepack": "npm run build && npm test",
     "build": "tsc",
     "test": "npx jest"
   },
